@@ -1,0 +1,13 @@
+python train.py \
+    --model "uie-base-chinese" \
+    --save_dir "./checkpoints" \
+    --train_path "data/simple_ner/train.txt" \
+    --dev_path "data/simple_ner/dev.txt" \
+    --img_log_dir "logs" \
+    --img_log_name "ERNIE-3.0" \
+    --batch_size 8 \
+    --max_seq_len 128 \
+    --num_train_epochs 100 \
+    --logging_steps 10 \
+    --valid_steps 100 \
+    --device "gpu"
